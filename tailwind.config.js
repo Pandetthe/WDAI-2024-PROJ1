@@ -3,6 +3,9 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      borderRadius: {
+        '4xl': '3rem'
+      },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
       },

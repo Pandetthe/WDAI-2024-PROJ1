@@ -618,6 +618,10 @@ video {
   margin-top: -0.125rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -636,6 +640,10 @@ video {
 
 .h-1 {
   height: 0.25rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .h-32 {
@@ -672,14 +680,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-28 {
-  height: 7rem;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .min-h-\[1200px\] {
@@ -720,10 +720,6 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
-}
-
-.flex-shrink-0 {
-  flex-shrink: 0;
 }
 
 .flex-grow {
@@ -849,10 +845,6 @@ video {
   justify-content: center;
 }
 
-.justify-between {
-  justify-content: space-between;
-}
-
 .justify-around {
   justify-content: space-around;
 }
@@ -899,6 +891,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .rounded-\[50px\] {
@@ -1051,6 +1047,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1088,6 +1089,10 @@ video {
 
 .text-end {
   text-align: end;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .align-bottom {
@@ -1353,6 +1358,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1367,8 +1378,20 @@ video {
     height: 12rem;
   }
 
+  .sm\:h-72 {
+    height: 18rem;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
+  }
+
+  .sm\:rounded-4xl {
+    border-radius: 3rem;
   }
 
   .sm\:p-16 {
@@ -1399,6 +1422,10 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:text-lg {
