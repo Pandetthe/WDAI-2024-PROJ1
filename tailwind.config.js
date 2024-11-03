@@ -3,6 +3,9 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ['Raleway', 'sans-serif'],
+      },
       animation: {
         'bg-move-dark': 'bg-move-dark 15s linear infinite',
         'bg-move-light': 'bg-move-light 15s linear infinite'

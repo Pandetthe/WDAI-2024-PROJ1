@@ -1,15 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekt</title>
-  <link rel="stylesheet" href="assets/css/global.css">
-</head>
-<body class="min-h-screen bg-gradient-to-br from-[#0D0C34] to-[#224396]">
-  <div>
-    <div class="fixed blur-[200vw] bg-black rounded-full min-w-[50vw] min-h-[50vw] left-[-20vw] top-[-20vw] animate-bg-move-dark"></div>
-    <div class="fixed blur-[200vw] bg-[#3E7BFF] rounded-full min-w-[50vw] min-h-[50vw] right-[-20vw] bottom-[-20vw] animate-bg-move-light"></div>
-  </div>
-</body>
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brTxdzn</title>
+    <script src="assets/js/main.js" defer></script>
+    <link rel="preload" href="assets/css/global.css" as="style" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-[#0D0C34] to-[#224396] font-raleway antialiased"
+  >
+    <div>
+      <div
+        class="fixed left-[-600px] top-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-dark rounded-full bg-black opacity-50 blur-[1000px]"
+      ></div>
+      <div
+        class="fixed bottom-[-600px] right-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-light rounded-full bg-[#3E7BFF] opacity-20 blur-[1000px]"
+      ></div>
+    </div>
+    <header class="sticky top-0 z-10 border-b border-[#416ec5] text-white">
+      <section class="flex h-48 font-thin">
+        <section
+          class="hidden aspect-square h-full border-r border-[#416ec5] bg-[#060617] bg-opacity-75 p-16 md:block"
+        >
+          <img
+            src="assets/img/logo.png"
+            class="h-full w-full object-scale-down"
+          />
+        </section>
+        <section class="h-full flex-grow bg-gradient-to-b to-[#5691FF]">
+          <div
+            class="flex h-full items-center justify-between bg-[#060617] bg-opacity-50 px-16 xl:px-32"
+          >
+            <h1 class="text-4xl font-semibold">
+              <a>Bartosz Jurczyk</a>
+            </h1>
+            <div>
+              <button
+                id="hamburger-button"
+                class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden"
+              >
+                <div
+                  class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
+                ></div>
+              </button>
+              <nav class="hidden space-x-24 text-xl lg:block" aria-label="main">
+                <a href="offers.html" class="hover:opacity-90">Oferty</a>
+                <a href="contact.html" class="hover:opacity-90">Kontakt</a>
+                <a href="about.html" class="hover:opacity-90">O mnie</a>
+                <a href="portfolio.html" class="hover:opacity-90">Portfolio</a>
+                <a
+                  href="index.html"
+                  class="text-4xl font-semibold hover:opacity-90"
+                >
+                  Strona główna
+                </a>
+              </nav>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section
+        id="mobile-menu"
+        class="top-68 animate-open-menu absolute hidden w-full origin-top flex-col justify-center bg-black text-5xl"
+      >
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="offers.html" class="w-full py-6 text-center hover:opacity-90"
+            >Oferty</a
+          >
+          <a
+            href="contact.html"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Kontakt</a
+          >
+          <a href="about.html" class="w-full py-6 text-center hover:opacity-90"
+            >O mnie</a
+          >
+          <a
+            href="portfolio.html"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Portfolio</a
+          >
+        </nav>
+      </section>
+    </header>
+    <aside
+      class="z-5 fixed top-0 hidden h-screen w-48 border-r border-[#416ec5] bg-gradient-to-r to-[#5691FF] lg:block"
+    >
+      <div
+        class="flex h-full w-full items-center justify-center bg-[#060617] bg-opacity-50 pt-48"
+      >
+        <div class="rotate-90">
+          <h1 class="text-[12rem] font-black leading-[12rem] text-[#050517]">
+            brTxdzn
+          </h1>
+        </div>
+      </div>
+    </aside>
+    <div class="flex min-h-[calc(100vh-12.0625rem)] flex-col md:pl-48">
+      <main
+        class="flex w-full flex-grow flex-col pr-32 pt-20 text-right text-3xl text-white"
+      >
+        <section class="flex justify-end align-bottom">
+          <p class="w-5/12">
+            Poszukujesz unikalnych, przyciągających uwagę projektów graficznych,
+            które wzmocnią wizerunek <a class="text-[#85B6FF]">Twojej</a> marki?
+          </p>
+        </section>
+        <section class="flex flex-grow flex-row space-x-10">
+          <div class="flex flex-grow">
+            <img
+              src="assets/img/main.svg"
+              alt="My Happy SVG"
+              class="self-end"
+            />
+          </div>
+          <div class="w-5/12 flex-col space-y-20 py-20">
+            <p class="">
+              Jesteś we właściwym miejscu! Wystarczy kilka kroków i możemy
+              rozpocząć współpracę.
+            </p>
+            <button
+              class="rounded-full bg-[#D9D9D9] px-10 py-6 text-3xl font-semibold text-blue-400"
+              onclick="window.location.href='portfolio.html'"
+            >
+              Rozpocznij
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="w-full">
+        <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
+          © 2024 Jakub Jurczyk
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
