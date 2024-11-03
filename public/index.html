@@ -25,7 +25,7 @@
     </div>
     <header class="sticky top-0 z-10 border-b border-[#416ec5] text-white">
       <section class="flex h-24 font-thin sm:h-36 lg:h-48">
-        <section class="aspect-square h-full border-r border-[#416ec5] bg-[#060617] bg-opacity-75 p-6 lg:p-16">
+        <section class="aspect-square h-full border-r border-[#416ec5] bg-[#060617] p-6 lg:p-16">
           <img
             src="assets/img/logo.png"
             class="h-full w-full object-scale-down"
@@ -52,65 +52,61 @@
         </section>
       </section>
       <section id="mobile-menu" class="animate-open-menu absolute hidden lg:hidden w-full origin-top flex-col justify-center bg-black bg-opacity-90 text-5xl">
-        <nav class="flex min-h-screen flex-col items-center py-8" aria-label="Mobile navigation">
+        <nav class="flex min-h-screen flex-col items-center py-8 w-full" aria-label="Mobile navigation">
           <a href="offers.html" class="w-full py-6 text-center hover:opacity-90">Oferty</a>
+          <hr class="border-white h-1 w-1/12">
           <a href="contact.html" class="w-full py-6 text-center hover:opacity-90">Kontakt</a>
+          <hr class="border-white h-1 w-1/12">
           <a href="about.html" class="w-full py-6 text-center hover:opacity-90">O mnie</a>
+          <hr class="border-white h-1 w-1/12">
           <a href="portfolio.html" class="w-full py-6 text-center hover:opacity-90">Portfolio</a>
         </nav>
       </section>
     </header>
-    <aside
-      class="z-5 fixed top-0 hidden h-screen w-48 border-r border-[#416ec5] bg-gradient-to-r to-[#5691FF] lg:block"
-    >
-      <div
-        class="flex h-full w-full items-center justify-center bg-[#060617] bg-opacity-50 pt-48"
-      >
-        <div class="rotate-90">
-          <h1 class="text-[12rem] font-black leading-[12rem] text-[#050517]">
-            brTxdzn
-          </h1>
+    <div class="flex flex-row min-h-[calc(100vh-6.0625rem)] sm:min-h-[calc(100vh-9.0625rem)] lg:min-h-[calc(100vh-12.0625rem)]">
+      <aside class="z-5 sticky top-0 hidden w-48 min-h-full border-r border-[#416ec5] bg-gradient-to-r to-[#5691FF] lg:block">
+        <div class="flex h-full w-full items-center justify-center bg-[#060617] bg-opacity-50">
+          <div class="rotate-90">
+            <h1 class="text-[11rem] font-black text-[#050517]">
+              brTxdzn
+            </h1>
+          </div>
         </div>
-      </div>
-    </aside>
-    <div class="flex min-h-[calc(100vh-12.0625rem)] flex-col md:pl-48">
-      <main
-        class="flex w-full flex-grow flex-col pr-32 pt-20 text-right text-3xl text-white"
-      >
-        <section class="flex justify-end align-bottom">
-          <p class="w-5/12">
-            Poszukujesz unikalnych, przyciągających uwagę projektów graficznych,
-            które wzmocnią wizerunek
-            <a class="font-bold bg-clip-text bg-gradient-to-r from-[#85B6FF] to-[#BACEFF] text-transparent">Twojej</a> marki?
-          </p>
-        </section>
-        <section class="flex flex-grow flex-row space-x-10">
-          <div class="flex flex-grow">
-            <img
-              src="assets/img/main.svg"
-              alt="My Happy SVG"
-              class="self-end"
-            />
-          </div>
-          <div class="w-5/12 flex-col space-y-20 py-20">
-            <p class="">
-              Jesteś we właściwym miejscu! Wystarczy kilka kroków i możemy
-              rozpocząć współpracę.
+      </aside>
+      <div class="flex-col flex w-full h-full">
+        <main class="flex w-full flex-grow flex-col xl:pr-32 pt-12 xl:gap-0 gap-20 xl:text-right text-justify xl:text-3xl md:text-2xl sm:text-base text-white">
+          <section class="flex justify-between xl:justify-end align-bottom px-8 xl:px-0">
+            <p class="xl:w-5/12 w-full">
+              Poszukujesz unikalnych, przyciągających uwagę projektów graficznych,
+              które wzmocnią wizerunek
+              <a class="font-bold bg-clip-text bg-gradient-to-r from-[#85B6FF] to-[#BACEFF] text-transparent">Twojej</a> marki?
             </p>
-            <button
-              class="rounded-full bg-[#D9D9D9] px-10 py-6 text-3xl font-semibold text-blue-400"
-              onclick="window.location.href='portfolio.html'"
-            >
-              Rozpocznij
-            </button>
-          </div>
-        </section>
-      </main>
-      <footer class="w-full">
-        <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
-          © 2024 Jakub Jurczyk
-        </section>
-      </footer>
+          </section>
+          <section class="flex flex-grow h-auto xl:flex-row flex-col xl:space-x-10">
+            <div class="xl:w-7/12 w-full flex flex-grow items-end xl:pr-0 pr-4">
+              <img
+                src="assets/img/main.svg"
+                alt="Woman talking to the man"
+                class="h-auto w-full object-contain"
+              />
+            </div>
+            <div class="xl:w-5/12 w-full flex-col flex xl:space-y-20 space-y-4 py-20 xl:px-0 px-8">
+              <p>
+                Jesteś we właściwym miejscu! Wystarczy kilka kroków i możemy
+                rozpocząć współpracę.
+              </p>
+              <button class="rounded-full bg-[#D9D9D9] px-10 md:py-6 py-3 md:text-3xl text-xl font-semibold text-blue-400 md:w-72 w-48 self-end" onclick="window.location.href='portfolio.html'">
+                Rozpocznij
+              </button>
+            </div>
+          </section>
+        </main>
+        <footer class="w-full">
+          <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
+            © 2024 Jakub Jurczyk
+          </section>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
