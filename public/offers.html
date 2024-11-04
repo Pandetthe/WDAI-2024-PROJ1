@@ -12,6 +12,9 @@
     <link rel="manifest" href="assets/img/site.webmanifest" />
     <script src="assets/js/main.js" defer></script>
     <link rel="preload" href="assets/css/global.css" as="style" />
+    <link rel="preload" href="assets/img/offer1.png" as="image" />
+    <link rel="preload" href="assets/img/offer2.png" as="image" />
+    <link rel="preload" href="assets/img/offer3.png" as="image" />
     <link rel="stylesheet" href="assets/css/global.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
@@ -53,10 +56,10 @@
       </section>
   </header>
   <div class="flex min-h-[calc(100vh-6.0625rem)] sm:min-h-[calc(100vh-9.0625rem)] lg:min-h-[calc(100vh-12.0625rem)] h-full flex-col">
-    <main class="flex w-full flex-grow lg:flex-row flex-col items-center justify-center px-8 xl:px-16 2xl:px-32 py-8 space-y-32 lg:space-y-0">
-      <div id="left-card" class="aspect-[4/6] lg:w-1/5 w-1/2 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
+    <main class="flex w-full flex-grow lg:flex-row flex-col items-center justify-center px-8 xl:px-16 2xl:px-32 py-8 space-y-16 lg:space-y-0">
+      <div id="left-card" class="lg:aspect-[4/6] lg:w-1/5 w-auto max-w-full 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
         <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Nowoczesny plakat</h1>
-        <img src="assets/img/offer1.png">
+        <img src="assets/img/offer1.png" alt="Zdjęcie oferty nr 1" class="p-5">
         <ol class="2xl:text-base lg:text-xs text-lg">
           <li>Do A4 (210 x 297 mm) - <a class="font-semibold">US$5</a></li>
           <li>Do A2 (594 x 420mm) - <a class="font-semibold">US$10</a></li>
@@ -64,6 +67,7 @@
         </ol>
         <button onclick="window.location.href='https://www.fiverr.com/s/YR0jB9Q'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
       </div>
+      <hr class="h-4 w-4/5 lg:hidden">
       <button id="left-arrow" onclick="moveCards('left')" class="ml-12 mr-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110 hidden lg:block">
         <svg
           width="36"
@@ -77,9 +81,9 @@
           />
         </svg>
       </button>
-      <div id="middle-card" class="aspect-[4/6] lg:w-1/5 w-1/2 lg:scale-125 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
+      <div id="middle-card" class="lg:aspect-[4/6] lg:w-1/5 w-auto max-w-full lg:scale-125 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
         <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Okładka albumu</h1>
-        <img src="assets/img/offer2.png" alt="Zdjęcie oferty nr 2">
+        <img src="assets/img/offer2.png" alt="Zdjęcie oferty nr 2" class="p-5">
         <ol class="2xl:text-base lg:text-[0.5rem] lg:leading-[0.7rem] text-lg">
           <li>Tylko przód - <a class="font-semibold">US$5</a></li>
           <li>Pełny zestaw - <a class="font-semibold">US$10</a></li>
@@ -87,6 +91,7 @@
         </ol>
         <button onclick="window.location.href='https://www.fiverr.com/s/m5e6NEV'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
       </div>
+      <hr class="h-4 w-4/5 lg:hidden">
       <button id="right-arrow" onclick="moveCards('right')" class="mr-12 ml-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110 hidden lg:block">
         <svg
           width="36"
@@ -100,9 +105,9 @@
           />
         </svg>
       </button>
-      <div id="right-card" class="aspect-[4/6] lg:w-1/5 w-1/2 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
+      <div id="right-card" class="lg:aspect-[4/6] lg:w-1/5 w-auto max-w-full 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
         <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Baner na socialmedia</h1>
-        <img src="assets/img/offer3.png" alt="Zdjęcie oferty nr 3">
+        <img src="assets/img/offer3.png" alt="Zdjęcie oferty nr 3" class="p-5">
         <ol class="2xl:text-base lg:text-xs text-lg">
           <li>Prosty baner - <a class="font-semibold">US$5</a></li>
           <li>Baner 3D - <a class="font-semibold">US$10</a></li>
