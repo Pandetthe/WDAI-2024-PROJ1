@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pl">
+<html lang="pl" class="bg-gradient-to-br from-[#0D0C34] to-[#224396]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,112 +18,78 @@
       rel="stylesheet"
     />
   </head>
-  <body
-    class="min-h-screen bg-gradient-to-br from-[#0D0C34] to-[#224396] font-raleway antialiased"
-  >
+  <body class="min-h-screen font-raleway antialiased">
     <div>
-      <div
-        class="fixed left-[-600px] top-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-dark rounded-full bg-black opacity-50 blur-[1000px]"
-      ></div>
-      <div
-        class="fixed bottom-[-600px] right-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-light rounded-full bg-[#3E7BFF] opacity-20 blur-[1000px]"
-      ></div>
+      <div class="fixed left-[-600px] top-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-dark rounded-full bg-black opacity-50 blur-[1000px]"></div>
+      <div class="fixed bottom-[-600px] right-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-light rounded-full bg-[#3E7BFF] opacity-20 blur-[1000px]"></div>
     </div>
     <header class="sticky top-0 z-10 border-b border-[#416ec5] text-white">
-      <section class="flex h-48 font-thin">
-        <section class="h-full flex-grow bg-gradient-to-b to-[#5691FF]">
-          <div
-            class="flex h-full items-center justify-end bg-[#060617] bg-opacity-50 px-16 xl:px-32"
-          >
-            <div>
-              <button
-                id="hamburger-button"
-                class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden"
-              >
-                <div
-                  class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"
-                ></div>
-              </button>
-              <nav class="hidden space-x-24 text-xl lg:block" aria-label="main">
-                <a href="contact.html" class="hover:opacity-90">Kontakt</a>
-                <a href="about.html" class="hover:opacity-90">O mnie</a>
-                <a href="portfolio.html" class="hover:opacity-90">Portfolio</a>
-                <a href="index.html" class="hover:opacity-90">Strona główna</a>
-                <a
-                  href="offers.html"
-                  class="text-4xl font-semibold hover:opacity-90"
-                  >Oferty</a
-                >
-              </nav>
-            </div>
+      <section class="flex h-24 font-thin sm:h-36 lg:h-48">
+          <div class="h-full flex-grow bg-gradient-to-b to-[#5691FF]">
+              <div class="flex h-full items-center justify-end bg-[#060617] bg-opacity-50 px-8 xl:px-16 2xl:px-32">
+                  <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden" aria-label="Open navigation">
+                      <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-300 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-300 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-300 after:content-['']"></div>
+                  </button>
+                  <nav class="hidden space-x-3 text-base lg:block lg:text-lg xl:space-x-8 2xl:space-x-16" aria-label="Main navigation">
+                      <a href="contact.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">Kontakt</a>
+                      <a href="about.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">O mnie</a>
+                      <a href="portfolio.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">Portfolio</a>
+                      <a href="index.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">Strona główna</a>
+                      <a href="offers.html" class="text-3xl font-semibold hover:opacity-90 xl:text-4xl duration-200 ease-in-out hover:scale-110 inline-block">Oferty</a>
+                  </nav>
+              </div>
           </div>
-        </section>
       </section>
-      <section
-        id="mobile-menu"
-        class="top-68 animate-open-menu absolute hidden w-full origin-top flex-col justify-center bg-black text-5xl"
-      >
-        <nav
-          class="flex min-h-screen flex-col items-center py-8"
-          aria-label="mobile"
-        >
-          <a href="offers.html" class="w-full py-6 text-center hover:opacity-90"
-            >Oferty</a
-          >
-          <a
-            href="contact.html"
-            class="w-full py-6 text-center hover:opacity-90"
-            >Kontakt</a
-          >
-          <a href="about.html" class="w-full py-6 text-center hover:opacity-90"
-            >O mnie</a
-          >
-          <a
-            href="portfolio.html"
-            class="w-full py-6 text-center hover:opacity-90"
-            >Portfolio</a
-          >
-        </nav>
+      <section id="mobile-menu" class="animate-open-menu absolute hidden lg:hidden w-full origin-top flex-col justify-center bg-black bg-opacity-90 text-5xl">
+          <nav class="flex min-h-screen flex-col items-center py-8 w-full" aria-label="Mobile navigation">
+              <a href="contact.html" class="w-full py-6 text-center hover:opacity-90">Kontakt</a>
+              <hr class="border-white h-1 w-1/12">
+              <a href="about.html" class="w-full py-6 text-center hover:opacity-90">O mnie</a>
+              <hr class="border-white h-1 w-1/12">
+              <a href="portfolio.html" class="w-full py-6 text-center hover:opacity-90">Portfolio</a>
+              <hr class="border-white h-1 w-1/12">
+              <a href="index.html" class="w-full py-6 text-center hover:opacity-90">Strona główna</a>
+          </nav>
       </section>
-    </header>
-    <div
-      class="flex h-[calc(100vh-12.0625rem)] min-h-[calc(100vh-12.0625rem)] flex-col"
-    >
-      <main
-        class="flex w-full flex-grow flex-row items-center justify-center gap-14 px-32"
-      >
-        <div class="aspect-[350/500] h-4/6 rounded-[50px] bg-white"></div>
-        <div>
-          <svg
-            width="36"
-            height="38"
-            viewBox="0 0 36 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M33 21.5C34.3807 21.5 35.5 20.3807 35.5 19C35.5 17.6193 34.3807 16.5 33 16.5L33 21.5ZM1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.346019 18.1184 0.346018 17.1421 1.32233L1.23223 17.2322ZM33 16.5L3 16.5L3 21.5L33 21.5L33 16.5Z"
-              fill="white"
-            />
-          </svg>
+  </header>
+    <div class="flex h-[calc(100vh-12.0625rem)] min-h-[calc(100vh-12.0625rem)] flex-col">
+      <main class="flex w-full flex-grow flex-row items-center justify-center px-32">
+        <div id="left-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-blue-400 p-10">
+            ma
         </div>
-        <div class="aspect-[350/500] h-5/6 rounded-[50px] bg-white"></div>
-        <div>
-          <svg
-            width="36"
-            height="38"
-            viewBox="0 0 36 38"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3 21.5C1.61929 21.5 0.5 20.3807 0.5 19C0.5 17.6193 1.61929 16.5 3 16.5L3 21.5ZM34.7678 17.2322C35.7441 18.2085 35.7441 19.7915 34.7678 20.7678L18.8579 36.6777C17.8816 37.654 16.2986 37.654 15.3223 36.6777C14.346 35.7014 14.346 34.1184 15.3223 33.1421L29.4645 19L15.3223 4.85786C14.346 3.88155 14.346 2.29864 15.3223 1.32233C16.2986 0.346019 17.8816 0.346018 18.8579 1.32233L34.7678 17.2322ZM3 16.5L33 16.5L33 21.5L3 21.5L3 16.5Z"
-              fill="white"
-            />
-          </svg>
+        <button onclick="moveCards('left')" class="cursor-pointer ml-12 mr-[5.9rem] z-[1]">
+            <svg
+                width="36"
+                height="38"
+                viewBox="0 0 36 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M33 21.5C34.3807 21.5 35.5 20.3807 35.5 19C35.5 17.6193 34.3807 16.5 33 16.5L33 21.5ZM1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.346019 18.1184 0.346018 17.1421 1.32233L1.23223 17.2322ZM33 16.5L3 16.5L3 21.5L33 21.5L33 16.5Z"
+                    fill="white"
+                />
+            </svg>
+        </button>
+        <div id="middle-card" class="aspect-[350/500] h-4/6 transform scale-125 rounded-[50px] bg-white z-[2] p-10">
+            ala
         </div>
-        <div class="aspect-[350/500] h-4/6 rounded-[50px] bg-white"></div>
-      </main>
+        <button onclick="moveCards('right')" class="cursor-pointer  mr-12 ml-[5.9rem] z-[1]">
+            <svg
+                width="36"
+                height="38"
+                viewBox="0 0 36 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3 21.5C1.61929 21.5 0.5 20.3807 0.5 19C0.5 17.6193 1.61929 16.5 3 16.5L3 21.5ZM34.7678 17.2322C35.7441 18.2085 35.7441 19.7915 34.7678 20.7678L18.8579 36.6777C17.8816 37.654 16.2986 37.654 15.3223 36.6777C14.346 35.7014 14.346 34.1184 15.3223 33.1421L29.4645 19L15.3223 4.85786C14.346 3.88155 14.346 2.29864 15.3223 1.32233C16.2986 0.346019 17.8816 0.346018 18.8579 1.32233L34.7678 17.2322ZM3 16.5L33 16.5L33 21.5L3 21.5L3 16.5Z"
+                    fill="white"
+                />
+            </svg>
+        </button>
+        <div id="right-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-red-500 p-10">
+            kot
+        </div>
+    </main>
       <footer class="w-full">
         <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
           © 2024 Jakub Jurczyk
