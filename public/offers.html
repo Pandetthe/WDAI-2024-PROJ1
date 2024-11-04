@@ -52,49 +52,70 @@
           </nav>
       </section>
   </header>
-    <div class="flex h-[calc(100vh-12.0625rem)] min-h-[calc(100vh-12.0625rem)] flex-col">
-      <main class="flex w-full flex-grow flex-row items-center justify-center px-32">
-        <div id="left-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-[#DEDEDE] p-10">
-            ma
-        </div>
-        <button id="left-arrow" onclick="moveCards('left')" class="ml-12 mr-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110">
-            <svg
-                width="36"
-                height="38"
-                viewBox="0 0 36 38"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M33 21.5C34.3807 21.5 35.5 20.3807 35.5 19C35.5 17.6193 34.3807 16.5 33 16.5L33 21.5ZM1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.346019 18.1184 0.346018 17.1421 1.32233L1.23223 17.2322ZM33 16.5L3 16.5L3 21.5L33 21.5L33 16.5Z"
-                    fill="white"
-                />
-            </svg>
-        </button>
-        <div id="middle-card" class="aspect-[350/500] h-4/6 transform scale-125 rounded-[50px] bg-[#DEDEDE] z-[2] p-10">
-            ala
-        </div>
-        <button id="right-arrow" onclick="moveCards('right')" class="mr-12 ml-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110">
-            <svg
-                width="36"
-                height="38"
-                viewBox="0 0 36 38"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M3 21.5C1.61929 21.5 0.5 20.3807 0.5 19C0.5 17.6193 1.61929 16.5 3 16.5L3 21.5ZM34.7678 17.2322C35.7441 18.2085 35.7441 19.7915 34.7678 20.7678L18.8579 36.6777C17.8816 37.654 16.2986 37.654 15.3223 36.6777C14.346 35.7014 14.346 34.1184 15.3223 33.1421L29.4645 19L15.3223 4.85786C14.346 3.88155 14.346 2.29864 15.3223 1.32233C16.2986 0.346019 17.8816 0.346018 18.8579 1.32233L34.7678 17.2322ZM3 16.5L33 16.5L33 21.5L3 21.5L3 16.5Z"
-                    fill="white"
-                />
-            </svg>
-        </button>
-        <div id="right-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-[#DEDEDE] p-10">
-            kot
-        </div>
+  <div class="flex min-h-[calc(100vh-6.0625rem)] sm:min-h-[calc(100vh-9.0625rem)] lg:min-h-[calc(100vh-12.0625rem)] h-full flex-col">
+    <main class="flex w-full flex-grow lg:flex-row flex-col items-center justify-center px-8 xl:px-16 2xl:px-32 py-8 space-y-32 lg:space-y-0">
+      <div id="left-card" class="aspect-[4/6] lg:w-1/5 w-1/2 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
+        <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Nowoczesny plakat</h1>
+        <img src="assets/img/offer1.png">
+        <ol class="2xl:text-base lg:text-xs text-lg">
+          <li>Do A4 (210 x 297 mm) - <a class="font-semibold">US$5</a></li>
+          <li>Do A2 (594 x 420mm) - <a class="font-semibold">US$10</a></li>
+          <li>Jakikolwiek rozmiar - <a class="font-semibold">US$20</a></li>
+        </ol>
+        <button onclick="window.location.href='https://www.fiverr.com/s/YR0jB9Q'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
+      </div>
+      <button id="left-arrow" onclick="moveCards('left')" class="ml-12 mr-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110 hidden lg:block">
+        <svg
+          width="36"
+          height="38"
+          viewBox="0 0 36 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M33 21.5C34.3807 21.5 35.5 20.3807 35.5 19C35.5 17.6193 34.3807 16.5 33 16.5L33 21.5ZM1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.346019 18.1184 0.346018 17.1421 1.32233L1.23223 17.2322ZM33 16.5L3 16.5L3 21.5L33 21.5L33 16.5Z"
+              fill="white"
+          />
+        </svg>
+      </button>
+      <div id="middle-card" class="aspect-[4/6] lg:w-1/5 w-1/2 lg:scale-125 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
+        <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Okładka albumu</h1>
+        <img src="assets/img/offer2.png" alt="Zdjęcie oferty nr 2">
+        <ol class="2xl:text-base lg:text-[0.5rem] lg:leading-[0.7rem] text-lg">
+          <li>Tylko przód - <a class="font-semibold">US$5</a></li>
+          <li>Pełny zestaw - <a class="font-semibold">US$10</a></li>
+          <li>Pełny zestaw wraz z grafikami do mediów społecznościowych - <a class="font-semibold">US$20</a></li>
+        </ol>
+        <button onclick="window.location.href='https://www.fiverr.com/s/m5e6NEV'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
+      </div>
+      <button id="right-arrow" onclick="moveCards('right')" class="mr-12 ml-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110 hidden lg:block">
+        <svg
+          width="36"
+          height="38"
+          viewBox="0 0 36 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+              d="M3 21.5C1.61929 21.5 0.5 20.3807 0.5 19C0.5 17.6193 1.61929 16.5 3 16.5L3 21.5ZM34.7678 17.2322C35.7441 18.2085 35.7441 19.7915 34.7678 20.7678L18.8579 36.6777C17.8816 37.654 16.2986 37.654 15.3223 36.6777C14.346 35.7014 14.346 34.1184 15.3223 33.1421L29.4645 19L15.3223 4.85786C14.346 3.88155 14.346 2.29864 15.3223 1.32233C16.2986 0.346019 17.8816 0.346018 18.8579 1.32233L34.7678 17.2322ZM3 16.5L33 16.5L33 21.5L3 21.5L3 16.5Z"
+              fill="white"
+          />
+        </svg>
+      </button>
+      <div id="right-card" class="aspect-[4/6] lg:w-1/5 w-1/2 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
+        <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Baner na socialmedia</h1>
+        <img src="assets/img/offer3.png" alt="Zdjęcie oferty nr 3">
+        <ol class="2xl:text-base lg:text-xs text-lg">
+          <li>Prosty baner - <a class="font-semibold">US$5</a></li>
+          <li>Baner 3D - <a class="font-semibold">US$10</a></li>
+          <li>Baner 3D w wielu motywach - <a class="font-semibold">US$20</a></li>
+        </ol>
+        <button onclick="window.location.href='https://www.fiverr.com/s/YR0jB9Q'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
+      </div>
     </main>
-      <footer class="w-full">
-        <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
-          © 2024 Jakub Jurczyk
-        </section>
-      </footer>
+    <footer class="w-full">
+      <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
+        © 2024 Jakub Jurczyk
+      </section>
+    </footer>
     </div>
   </body>
 </html>

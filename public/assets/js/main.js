@@ -73,8 +73,8 @@ function moveCards(direction) {
             middleCard.className = rightCard.className;
             rightCard.innerHTML = innerHTML;
             rightCard.className = classList;
-            middleCard.classList.add('scale-125');
-            leftCard.classList.remove('scale-125');
+            middleCard.classList.add('lg:scale-125');
+            leftCard.classList.remove('lg:scale-125');
             leftArrow.disabled = false;
             rightArrow.disabled = false;
         }, 500);
@@ -98,8 +98,8 @@ function moveCards(direction) {
             rightCard.className = middleCard.className;
             middleCard.innerHTML = innerHTML;
             middleCard.className = classList;
-            middleCard.classList.add('scale-125');
-            rightCard.classList.remove('scale-125');
+            middleCard.classList.add('lg:scale-125');
+            rightCard.classList.remove('lg:scale-125');
             leftArrow.disabled = false;
             rightArrow.disabled = false;
         }, 500);
