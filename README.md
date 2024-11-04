@@ -1,1 +1,1 @@
-# WDAI-2024-PROJ1
+# Projekt 1 na WDAI 2024
