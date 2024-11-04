@@ -61,7 +61,7 @@
     </header>
     <div class="flex min-h-[calc(100vh-6.0625rem)] sm:min-h-[calc(100vh-9.0625rem)] lg:min-h-[calc(100vh-12.0625rem)] flex-col">
       <main class="flex w-full flex-grow flex-wrap items-center lg:justify-between justify-center gap-16 py-16 px-8 xl:px-16 2xl:px-32">
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center duration-200 ease-in-out hover:scale-105" onclick="openModal('assets/img/portfolio1Large.jpg')">  
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center duration-200 ease-in-out hover:scale-105" onclick="openModalImg('assets/img/portfolio1Large.jpg')">  
             <img
                 src="assets/img/portfolio1.jpg"
                 alt="Zdjęcie portfolio nr 1"
@@ -69,42 +69,42 @@
                 class="h-full w-full sm:rounded-4xl rounded-3xl bg-black bg-opacity-50 object-contain text-white duration-200 ease-in-out hover:scale-105"
             />
         </button>
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModal('assets/img/portfolio2Large.jpg')">
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModalImg('assets/img/portfolio2Large.jpg')">
             <img
             src="assets/img/portfolio2.jpg"
             alt="Zdjęcie portfolio nr 2"
             class="h-full w-full sm:rounded-4xl rounded-3xl bg-black bg-opacity-50 object-contain text-white duration-200 ease-in-out hover:scale-105"
             />
         </button>
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModal('assets/img/portfolio3Large.jpg')">
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModalImg('assets/img/portfolio3Large.jpg')">
             <img
                 src="assets/img/portfolio3.jpg"
                 alt="Zdjęcie portfolio nr 3"
                 class="h-full w-full sm:rounded-4xl rounded-3xl bg-black bg-opacity-50 object-contain text-white duration-200 ease-in-out hover:scale-105"
             />
         </button>
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModal('assets/img/portfolio4Large.jpg')">
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModalImg('assets/img/portfolio4Large.jpg')">
             <img
                 src="assets/img/portfolio4.jpg"
                 alt="Zdjęcie portfolio nr 4"
                 class="h-full w-full sm:rounded-4xl rounded-3xl bg-black bg-opacity-50 object-contain text-white duration-200 ease-in-out hover:scale-105"
             />
         </button>
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModal('assets/img/portfolio5Large.jpg')">
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModalImg('assets/img/portfolio5Large.jpg')">
             <img
                 src="assets/img/portfolio5.jpg"
                 alt="Zdjęcie portfolio nr 5"
                 class="h-full w-full sm:rounded-4xl rounded-3xl bg-black bg-opacity-50 object-contain text-white duration-200 ease-in-out hover:scale-105"
             />
         </button>
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModal('assets/img/portfolio6Large.jpg')">
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModalImg('assets/img/portfolio6Large.jpg')">
             <img
                 src="assets/img/portfolio6.jpg"
                 alt="Zdjęcie portfolio nr 6"
                 class="h-full w-full sm:rounded-4xl rounded-3xl bg-black bg-opacity-50 object-contain text-white duration-200 ease-in-out hover:scale-105"
             />
         </button>
-        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModal('assets/img/portfolio7Large.jpg')">
+        <button class="lg:h-60 xl:h-72 lg:w-auto w-full flex justify-center" onclick="openModalVid('assets/vid/rickroll.mp4')">
             <img
                 src="assets/img/portfolio7.jpg"
                 alt="Zdjęcie portfolio nr 7"
@@ -118,9 +118,13 @@
         </section>
       </footer>
     </div>
-    <div id="imageModal" class="fixed w-full min-h-screen h-screen inset-0 z-50 items-center justify-center hidden bg-black bg-opacity-90 py-20">
+    <div id="imageVideoModal" class="fixed w-full min-h-screen h-screen inset-0 z-50 items-center justify-center hidden bg-black bg-opacity-90 py-20">
         <div class="flex flex-col max-w-4xl w-full relative">
             <img id="modalImage" alt="Powiększone zdjęcie" class="rounded-2xl object-contain">
+            <video id="modalVideo" class="rounded-2xl object-contain hidden" controls>
+                <source id="modalVideoSource" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <button onclick="closeModal()" class="absolute top-2 right-2 text-black bg-white aspect-square h-10 rounded-lg font-black text-4xl opacity-75 duration-200 ease-in-out hover:scale-125">
                 &#x2716;
             </button>

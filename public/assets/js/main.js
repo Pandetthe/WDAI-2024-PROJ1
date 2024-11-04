@@ -11,9 +11,25 @@ const initApp = () => {
     hamburgerBtn.addEventListener('click', toggleMenu)
     mobileMenu.addEventListener('click', toggleMenu)
 }
-function openModal(imageUrl) {
-    const modal = document.getElementById('imageModal');
+function openModalVid(videoUrl) {
+    const modal = document.getElementById('imageVideoModal');
     const modalImage = document.getElementById('modalImage');
+    const modalVideo = document.getElementById('modalVideo');
+    const modalVideoSource = document.getElementById('modalVideoSource');
+    modalImage.classList.add('hidden');
+    modalVideo.classList.remove('hidden');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    modalVideoSource.src = videoUrl;
+    modalVideo.load();
+    modalVideo.play();
+}
+function openModalImg(imageUrl) {
+    const modal = document.getElementById('imageVideoModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalVideo = document.getElementById('modalVideo');
+    modalImage.classList.remove('hidden');
+    modalVideo.classList.add('hidden');
     // Preloading
     const img = new Image();
     img.onload = () => {
@@ -24,9 +40,12 @@ function openModal(imageUrl) {
     img.src = imageUrl;
 }
 function closeModal() {
-    const modal = document.getElementById('imageModal');
+    const modal = document.getElementById('imageVideoModal');
+    const modalVideo = document.getElementById('modalVideo');
     modal.classList.add('hidden');
     modal.classList.remove('flex');
+    modalVideo.pause();
+    modalVideo.currentTime = 0; 
 }
 
 function moveCards(direction) {
