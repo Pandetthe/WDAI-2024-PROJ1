@@ -764,6 +764,18 @@ video {
   max-height: 100%;
 }
 
+.max-h-60 {
+  max-height: 15rem;
+}
+
+.max-h-\[60vh\] {
+  max-height: 60vh;
+}
+
+.max-h-\[90vh\] {
+  max-height: 90vh;
+}
+
 .min-h-\[1200px\] {
   min-height: 1200px;
 }
@@ -1395,6 +1407,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1569,6 +1591,11 @@ video {
 
 .blur-\[1000px\] {
   --tw-blur: blur(1000px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-xl {
+  --tw-blur: blur(24px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1936,6 +1963,22 @@ video {
     height: 100%;
   }
 
+  .lg\:max-h-full {
+    max-height: 100%;
+  }
+
+  .lg\:max-h-\[90vh\] {
+    max-height: 90vh;
+  }
+
+  .lg\:max-h-\[80vh\] {
+    max-height: 80vh;
+  }
+
+  .lg\:max-h-\[70vh\] {
+    max-height: 70vh;
+  }
+
   .lg\:min-h-\[calc\(100vh-12\.0625rem\)\] {
     min-height: calc(100vh - 12.0625rem);
   }
@@ -1970,6 +2013,10 @@ video {
 
   .lg\:w-1\/5 {
     width: 20%;
+  }
+
+  .lg\:flex-grow-0 {
+    flex-grow: 0;
   }
 
   .lg\:scale-125 {
