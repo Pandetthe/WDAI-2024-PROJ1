@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oferty</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/apple-touch-icon.png"
+    />
     <meta name="apple-mobile-web-app-title" content="brTxdzn" />
     <link rel="manifest" href="assets/img/site.webmanifest" />
     <script src="assets/js/main.js" defer></script>
@@ -23,104 +32,220 @@
   </head>
   <body class="min-h-screen font-raleway antialiased">
     <div>
-      <div class="fixed left-[-600px] top-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-dark rounded-full bg-black opacity-50 blur-[1000px]"></div>
-      <div class="fixed bottom-[-600px] right-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-light rounded-full bg-[#3E7BFF] opacity-20 blur-[1000px]"></div>
+      <div
+        class="fixed left-[-600px] top-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-dark rounded-full bg-black opacity-50 blur-[1000px]"
+      ></div>
+      <div
+        class="fixed bottom-[-600px] right-[-600px] -z-50 min-h-[1200px] min-w-[1200px] animate-bg-move-light rounded-full bg-[#3E7BFF] opacity-20 blur-[1000px]"
+      ></div>
     </div>
     <header class="sticky top-0 z-10 border-b border-[#416ec5] text-white">
       <section class="flex h-24 font-thin sm:h-36 lg:h-48">
-          <div class="h-full flex-grow bg-gradient-to-b to-[#5691FF]">
-              <div class="flex h-full items-center justify-end bg-[#060617] bg-opacity-50 px-8 xl:px-16 2xl:px-32">
-                  <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden" aria-label="Open navigation">
-                      <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-300 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-300 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-300 after:content-['']"></div>
-                  </button>
-                  <nav class="hidden space-x-3 text-base lg:block lg:text-lg xl:space-x-8 2xl:space-x-16" aria-label="Main navigation">
-                      <a href="contact.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">Kontakt</a>
-                      <a href="about.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">O mnie</a>
-                      <a href="portfolio.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">Portfolio</a>
-                      <a href="index.html" class="hover:opacity-90 duration-200 ease-in-out hover:scale-110 inline-block">Strona główna</a>
-                      <a href="offers.html" class="text-3xl font-semibold hover:opacity-90 xl:text-4xl duration-200 ease-in-out hover:scale-110 inline-block">Oferty</a>
-                  </nav>
-              </div>
+        <div class="h-full flex-grow bg-gradient-to-b to-[#5691FF]">
+          <div
+            class="flex h-full items-center justify-end bg-[#060617] bg-opacity-50 px-8 xl:px-16 2xl:px-32"
+          >
+            <button
+              id="hamburger-button"
+              class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden"
+              aria-label="Open navigation"
+            >
+              <div
+                class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-300 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-300 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-300 after:content-['']"
+              ></div>
+            </button>
+            <nav
+              class="hidden space-x-3 text-base lg:block lg:text-lg xl:space-x-8 2xl:space-x-16"
+              aria-label="Main navigation"
+            >
+              <a
+                href="contact.html"
+                class="inline-block duration-200 ease-in-out hover:scale-110 hover:opacity-90"
+                >Kontakt</a
+              >
+              <a
+                href="about.html"
+                class="inline-block duration-200 ease-in-out hover:scale-110 hover:opacity-90"
+                >O mnie</a
+              >
+              <a
+                href="portfolio.html"
+                class="inline-block duration-200 ease-in-out hover:scale-110 hover:opacity-90"
+                >Portfolio</a
+              >
+              <a
+                href="index.html"
+                class="inline-block duration-200 ease-in-out hover:scale-110 hover:opacity-90"
+                >Strona główna</a
+              >
+              <a
+                href="offers.html"
+                class="inline-block text-3xl font-semibold duration-200 ease-in-out hover:scale-110 hover:opacity-90 xl:text-4xl"
+                >Oferty</a
+              >
+            </nav>
           </div>
+        </div>
       </section>
-      <section id="mobile-menu" class="animate-open-menu absolute hidden lg:hidden w-full origin-top flex-col justify-center bg-black bg-opacity-90 text-5xl">
-          <nav class="flex min-h-screen flex-col items-center py-8 w-full" aria-label="Mobile navigation">
-              <a href="contact.html" class="w-full py-6 text-center hover:opacity-90">Kontakt</a>
-              <hr class="border-white h-1 w-1/12">
-              <a href="about.html" class="w-full py-6 text-center hover:opacity-90">O mnie</a>
-              <hr class="border-white h-1 w-1/12">
-              <a href="portfolio.html" class="w-full py-6 text-center hover:opacity-90">Portfolio</a>
-              <hr class="border-white h-1 w-1/12">
-              <a href="index.html" class="w-full py-6 text-center hover:opacity-90">Strona główna</a>
-          </nav>
+      <section
+        id="mobile-menu"
+        class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-black bg-opacity-90 text-5xl lg:hidden"
+      >
+        <nav
+          class="flex min-h-screen w-full flex-col items-center py-8"
+          aria-label="Mobile navigation"
+        >
+          <a
+            href="contact.html"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Kontakt</a
+          >
+          <hr class="h-1 w-1/12 border-white" />
+          <a href="about.html" class="w-full py-6 text-center hover:opacity-90"
+            >O mnie</a
+          >
+          <hr class="h-1 w-1/12 border-white" />
+          <a
+            href="portfolio.html"
+            class="w-full py-6 text-center hover:opacity-90"
+            >Portfolio</a
+          >
+          <hr class="h-1 w-1/12 border-white" />
+          <a href="index.html" class="w-full py-6 text-center hover:opacity-90"
+            >Strona główna</a
+          >
+        </nav>
       </section>
-  </header>
-  <div class="flex min-h-[calc(100vh-6.0625rem)] sm:min-h-[calc(100vh-9.0625rem)] lg:min-h-[calc(100vh-12.0625rem)] h-full flex-col">
-    <main class="flex w-full flex-grow lg:flex-row flex-col items-center justify-center px-8 xl:px-16 2xl:px-32 py-24 space-y-16 lg:space-y-0">
-      <div id="left-card" class="lg:aspect-[4/6] lg:w-1/5 w-auto max-w-full 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
-        <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Nowoczesny plakat</h1>
-        <img src="assets/img/offer1.png" alt="Zdjęcie oferty nr 1" class="p-5">
-        <ol class="2xl:text-base lg:text-xs text-lg">
-          <li>Do A4 (210 x 297 mm) - <a class="font-semibold">US$5</a></li>
-          <li>Do A2 (594 x 420mm) - <a class="font-semibold">US$10</a></li>
-          <li>Jakikolwiek rozmiar - <a class="font-semibold">US$20</a></li>
-        </ol>
-        <button onclick="window.location.href='https://www.fiverr.com/s/YR0jB9Q'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
-      </div>
-      <hr class="h-4 w-4/5 lg:hidden">
-      <button id="left-arrow" onclick="moveCards('left')" class="ml-12 mr-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110 hidden lg:block">
-        <svg
-          width="36"
-          height="38"
-          viewBox="0 0 36 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
+    </header>
+    <div
+      class="flex h-full min-h-[calc(100vh-6.0625rem)] flex-col sm:min-h-[calc(100vh-9.0625rem)] lg:min-h-[calc(100vh-12.0625rem)]"
+    >
+      <main
+        class="flex w-full flex-grow flex-col items-center justify-center space-y-16 px-8 py-24 lg:flex-row lg:space-y-0 xl:px-16 2xl:px-32"
+      >
+        <div
+          id="left-card"
+          class="flex w-auto max-w-full transform flex-col justify-between rounded-[50px] bg-[#DEDEDE] p-10 lg:aspect-[4/6] lg:w-1/5 lg:rounded-[25px] lg:p-4 2xl:rounded-[50px] 2xl:p-8"
+        >
+          <h1 class="text-4xl font-bold lg:text-lg 2xl:text-2xl">
+            Nowoczesny plakat
+          </h1>
+          <img
+            src="assets/img/offer1.png"
+            alt="Zdjęcie oferty nr 1"
+            class="p-5"
+          />
+          <ol class="text-lg lg:text-xs 2xl:text-base">
+            <li>Do A4 (210 x 297 mm) - <a class="font-semibold">US$5</a></li>
+            <li>Do A2 (594 x 420mm) - <a class="font-semibold">US$10</a></li>
+            <li>Jakikolwiek rozmiar - <a class="font-semibold">US$20</a></li>
+          </ol>
+          <button
+            onclick="window.location.href='https://www.fiverr.com/s/YR0jB9Q'"
+            class="w-full self-end rounded-md bg-[#050517] px-4 py-2 text-sm tracking-wide text-white hover:bg-gray-900"
+          >
+            Otwórz
+          </button>
+        </div>
+        <hr class="h-4 w-4/5 lg:hidden" />
+        <button
+          id="left-arrow"
+          onclick="moveCards('left')"
+          class="z-[1] ml-12 mr-[5.9rem] hidden duration-200 ease-in-out hover:scale-110 lg:block"
+        >
+          <svg
+            width="36"
+            height="38"
+            viewBox="0 0 36 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
               d="M33 21.5C34.3807 21.5 35.5 20.3807 35.5 19C35.5 17.6193 34.3807 16.5 33 16.5L33 21.5ZM1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.346019 18.1184 0.346018 17.1421 1.32233L1.23223 17.2322ZM33 16.5L3 16.5L3 21.5L33 21.5L33 16.5Z"
               fill="white"
+            />
+          </svg>
+        </button>
+        <div
+          id="middle-card"
+          class="flex w-auto max-w-full transform flex-col justify-between rounded-[50px] bg-[#DEDEDE] p-10 lg:aspect-[4/6] lg:w-1/5 lg:scale-125 lg:rounded-[25px] lg:p-4 2xl:rounded-[50px] 2xl:p-8"
+        >
+          <h1 class="text-4xl font-bold lg:text-lg 2xl:text-2xl">
+            Okładka albumu
+          </h1>
+          <img
+            src="assets/img/offer2.png"
+            alt="Zdjęcie oferty nr 2"
+            class="p-5"
           />
-        </svg>
-      </button>
-      <div id="middle-card" class="lg:aspect-[4/6] lg:w-1/5 w-auto max-w-full lg:scale-125 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
-        <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Okładka albumu</h1>
-        <img src="assets/img/offer2.png" alt="Zdjęcie oferty nr 2" class="p-5">
-        <ol class="2xl:text-base lg:text-[0.5rem] lg:leading-[0.7rem] text-lg">
-          <li>Tylko przód - <a class="font-semibold">US$5</a></li>
-          <li>Pełny zestaw - <a class="font-semibold">US$10</a></li>
-          <li>Pełny zestaw wraz z grafikami do mediów społecznościowych - <a class="font-semibold">US$20</a></li>
-        </ol>
-        <button onclick="window.location.href='https://www.fiverr.com/s/m5e6NEV'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
-      </div>
-      <hr class="h-4 w-4/5 lg:hidden">
-      <button id="right-arrow" onclick="moveCards('right')" class="mr-12 ml-[5.9rem] z-[1] duration-200 ease-in-out hover:scale-110 hidden lg:block">
-        <svg
-          width="36"
-          height="38"
-          viewBox="0 0 36 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
+          <ol
+            class="text-lg lg:text-[0.5rem] lg:leading-[0.7rem] 2xl:text-base"
+          >
+            <li>Tylko przód - <a class="font-semibold">US$5</a></li>
+            <li>Pełny zestaw - <a class="font-semibold">US$10</a></li>
+            <li>
+              Pełny zestaw wraz z grafikami do mediów społecznościowych -
+              <a class="font-semibold">US$20</a>
+            </li>
+          </ol>
+          <button
+            onclick="window.location.href='https://www.fiverr.com/s/m5e6NEV'"
+            class="w-full self-end rounded-md bg-[#050517] px-4 py-2 text-sm tracking-wide text-white hover:bg-gray-900"
+          >
+            Otwórz
+          </button>
+        </div>
+        <hr class="h-4 w-4/5 lg:hidden" />
+        <button
+          id="right-arrow"
+          onclick="moveCards('right')"
+          class="z-[1] ml-[5.9rem] mr-12 hidden duration-200 ease-in-out hover:scale-110 lg:block"
+        >
+          <svg
+            width="36"
+            height="38"
+            viewBox="0 0 36 38"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
               d="M3 21.5C1.61929 21.5 0.5 20.3807 0.5 19C0.5 17.6193 1.61929 16.5 3 16.5L3 21.5ZM34.7678 17.2322C35.7441 18.2085 35.7441 19.7915 34.7678 20.7678L18.8579 36.6777C17.8816 37.654 16.2986 37.654 15.3223 36.6777C14.346 35.7014 14.346 34.1184 15.3223 33.1421L29.4645 19L15.3223 4.85786C14.346 3.88155 14.346 2.29864 15.3223 1.32233C16.2986 0.346019 17.8816 0.346018 18.8579 1.32233L34.7678 17.2322ZM3 16.5L33 16.5L33 21.5L3 21.5L3 16.5Z"
               fill="white"
+            />
+          </svg>
+        </button>
+        <div
+          id="right-card"
+          class="flex w-auto max-w-full transform flex-col justify-between rounded-[50px] bg-[#DEDEDE] p-10 lg:aspect-[4/6] lg:w-1/5 lg:rounded-[25px] lg:p-4 2xl:rounded-[50px] 2xl:p-8"
+        >
+          <h1 class="text-4xl font-bold lg:text-lg 2xl:text-2xl">
+            Baner na socialmedia
+          </h1>
+          <img
+            src="assets/img/offer3.png"
+            alt="Zdjęcie oferty nr 3"
+            class="p-5"
           />
-        </svg>
-      </button>
-      <div id="right-card" class="lg:aspect-[4/6] lg:w-1/5 w-auto max-w-full 2xl:rounded-[50px] lg:rounded-[25px] rounded-[50px] transform bg-[#DEDEDE] p-10 lg:p-4 2xl:p-8 flex flex-col justify-between">
-        <h1 class="2xl:text-2xl lg:text-lg text-4xl font-bold">Baner na socialmedia</h1>
-        <img src="assets/img/offer3.png" alt="Zdjęcie oferty nr 3" class="p-5">
-        <ol class="2xl:text-base lg:text-xs text-lg">
-          <li>Prosty baner - <a class="font-semibold">US$5</a></li>
-          <li>Baner 3D - <a class="font-semibold">US$10</a></li>
-          <li>Baner 3D w wielu motywach - <a class="font-semibold">US$20</a></li>
-        </ol>
-        <button onclick="window.location.href='https://www.fiverr.com/s/o8e64XA'" class="text-white bg-[#050517] hover:bg-gray-900 tracking-wide rounded-md text-sm px-4 py-2 w-full self-end">Otwórz</button>
-      </div>
-    </main>
-    <footer class="w-full">
-      <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
-        © 2024 Jakub Jurczyk
-      </section>
-    </footer>
+          <ol class="text-lg lg:text-xs 2xl:text-base">
+            <li>Prosty baner - <a class="font-semibold">US$5</a></li>
+            <li>Baner 3D - <a class="font-semibold">US$10</a></li>
+            <li>
+              Baner 3D w wielu motywach - <a class="font-semibold">US$20</a>
+            </li>
+          </ol>
+          <button
+            onclick="window.location.href='https://www.fiverr.com/s/o8e64XA'"
+            class="w-full self-end rounded-md bg-[#050517] px-4 py-2 text-sm tracking-wide text-white hover:bg-gray-900"
+          >
+            Otwórz
+          </button>
+        </div>
+      </main>
+      <footer class="w-full">
+        <section class="bg-black bg-opacity-10 px-10 py-1 text-end text-white">
+          © 2024 Jakub Jurczyk
+        </section>
+      </footer>
     </div>
   </body>
 </html>
