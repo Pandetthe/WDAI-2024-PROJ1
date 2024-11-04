@@ -54,10 +54,10 @@
   </header>
     <div class="flex h-[calc(100vh-12.0625rem)] min-h-[calc(100vh-12.0625rem)] flex-col">
       <main class="flex w-full flex-grow flex-row items-center justify-center px-32">
-        <div id="left-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-blue-400 p-10">
+        <div id="left-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-[#DEDEDE] p-10">
             ma
         </div>
-        <button onclick="moveCards('left')" class="cursor-pointer ml-12 mr-[5.9rem] z-[1]">
+        <button id="left-arrow" onclick="moveCards('left')" class="cursor-pointer ml-12 mr-[5.9rem] z-[1]">
             <svg
                 width="36"
                 height="38"
@@ -70,10 +70,10 @@
                 />
             </svg>
         </button>
-        <div id="middle-card" class="aspect-[350/500] h-4/6 transform scale-125 rounded-[50px] bg-white z-[2] p-10">
+        <div id="middle-card" class="aspect-[350/500] h-4/6 transform scale-125 rounded-[50px] bg-[#DEDEDE] z-[2] p-10">
             ala
         </div>
-        <button onclick="moveCards('right')" class="cursor-pointer  mr-12 ml-[5.9rem] z-[1]">
+        <button id="right-arrow" onclick="moveCards('right')" class="cursor-pointer  mr-12 ml-[5.9rem] z-[1]">
             <svg
                 width="36"
                 height="38"
@@ -86,7 +86,7 @@
                 />
             </svg>
         </button>
-        <div id="right-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-red-500 p-10">
+        <div id="right-card" class="aspect-[350/500] h-4/6 rounded-[50px] transform bg-[#DEDEDE] p-10">
             kot
         </div>
     </main>
